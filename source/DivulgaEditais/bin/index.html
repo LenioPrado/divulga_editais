@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <meta charset="utf-8">
+    
+     <title>Prefeitura Municipal de Poços de Caldas</title>
+</head>
+
+<body>
+    <section id="header">
+        <header>
+            <h1>Sistema de Cadastro de Editais</h1>
+            <p>Prefeitura Municipal de Poços de Caldas</p>
+        </header>
+        <footer>
+            <a href="#login" class="button style2 scrolly-middle">Entrar</a>
+            <a href="#register" class="button style2 scrolly">Cadastrar</a>
+        </footer>
+    </section>
+    
+<section id="login">
+    <article class="container box style3">
+         <header>
+            <h2>Entrar</h2>
+            <p>Confira todos os editais da prefeitura.</p>
+        </header>
+	   	<div id="messagesLogin" style="display:none" class="alert alert-dismissible">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <strong></strong>
+		</div>        
+         <form name="loginForm" id="loginForm" method="post">
+            <label>Email</label> <input type="text" id="userEmail" name="userEmail"/><br>
+            <label>Senha</label> <input type="password" id="userPassword" name="userPassword"/><br>
+            <input id="loginSubmit" type="submit" value="Entrar"/>
+        </form>
+         
+    </article>
+</section>
+    
+<section id="register">
+    <article class="container box style3">
+        <header>
+            <h2>Cadastrar</h2>
+            <p>Cadastre-se e fique por dentro de todos os editais da prefeitura.</p>
+        </header> 
+	    <form name="registerForm" id="registerForm" method="post">
+	        <label>Razão Social</label> <input type="text" name="socialName" id="socialName" /> <br>
+	       	<label>Nome Fantasia</label> <input type="text" name="fantasyName" id="fantasyName" /> <br>
+	        <label>Email </label> <input type="text" name="email" id="email"/> <br>
+	        <label>Senha</label> <input type="password" name="password" id="password"/> <br>
+	        <label>CNPJ</label> <input type="text" name="cnpj" id="cnpj"/> <br>
+	        <label>Tipo</label>
+	        <select id="type" name="type" onchange="show(this);">
+	                <option value="none" selected="selected">(Selecione uma opção)</option>
+	                <option value="branch">Usuário da Prefeitura</option>
+	                <option value="cnae">Empresa concorrente</option>
+	        </select> <br>
+	        <div id="branch" style="display:none">
+		        <label>Setor de atuação</label> <input type="text" name="branch" id="branch"/> <br>
+	        </div>
+	        <div id="cnae" style="display:none">
+		        <label>CNAE</label> <input type="text" name="cnae" id="cnae"/> <br>
+		        <label>Tipo de Empresa</label>
+		        <select id="companyType" name="companyType">
+			        <option value="" selected="selected">(Selecione uma opção)</option>
+			        <option value="MEI">Microempreendedor Individual</option>
+			        <option value="ME">Microempresa</option>
+			        <option value="EPP">Empresa de Pequeno Porte</option>
+			        <option value="SA">Sociedade Anônima (SA)</option>
+			        <option value="LTDA">Sociedade Limitada (LTDA)</option>
+		        </select> <br>
+	        </div>
+	        
+	        <label>CEP</label> <input type="text" name="zipCode" id="zipCode"/> <br>
+	        <label>Endereço</label> <input type="text" name="address" id="address"/> <br>
+	        <label>Numero</label> <input type="text" name="number" id="number"/> <br>
+	        <label>Complemento</label> <input type="text" name="complement" id="complement"/> <br>
+	        <label>Bairro</label> <input type="text" name="neighborhood" id="neighborhood"/> <br>
+	        <label>Cidade</label> <input type="text" name="city" id="city"/> <br>
+	        <label>Estado</label> <input type="text" name="state" id="state"/> <br>
+	        <label>Telefone Principal</label> <input type="text" name="phonePrimary" id="phonePrimary"/> <br>
+	        <label>Celular</label> <input type="text" name="phoneSecondary" id="phoneSecondary"/> <br>
+	        <label>Nome do Responsável</label> <input type="text" name="responsibleName" id="responsibleName"/> <br>
+	        <label>CPF do Responsável</label> <input type="text" name="responsibleCpf" id="responsibleCpf"/> <br>
+	        <input type="submit" value="Cadastrar" id="registerUser">
+	    </form>
+	   	<div id="messagesRegister" style="display:none" class="alert alert-dismissible">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <strong></strong>
+		</div>  	    
+    </article>
+</section>
+    
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/validation.js"></script>  	 	
+	<script src="assets/js/jquery.form.js"></script>
+	<script src="assets/js/jquery.validate.min.js"> </script>  
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	
+</body>
+</html>

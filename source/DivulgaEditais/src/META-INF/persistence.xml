@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<persistence version="2.1" 
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="divulgaEditais" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.Category</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.CompanyType</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.Modality</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.Notice</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.NoticesCategory</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.Role</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.User</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.UsersCategory</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.UsersNotice</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.UsersRole</class>
+		<class>beans.divulga.editais.ifsuldeminas.edu.br.UsersRolePK</class>
+
+		<properties>
+		
+		 <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+		 <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/divulgaeditais" />
+		 <property name="hibernate.connection.username" value="root" />
+		 <property name="hibernate.connection.password" value="zChpPzUqlmbTqvqqwr4mblGqYU2DRJ" />
+		 <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+		 <property name="hibernate.show_sql" value="true" />
+
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.use_sql_comments" value="true"/>
+
+        <property name="hibernate.transaction.factory_class" value="org.hibernate.transaction.JDBCTransactionFactory"/>
+        <property name="hibernate.current_session_context_class" value="thread"/>
+        <property name="hibernate.id.new_generator_mappings" value="false"/> 
+ 
+		</properties>
+
+    </persistence-unit>
+</persistence>

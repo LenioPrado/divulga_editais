@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_editais_cadastrados"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_cadastrados" />
+        <item
+            android:id="@+id/nav_editais_todos"
+            android:icon="@drawable/historico"
+            android:title="@string/nav_todos" />
+        <item
+            android:id="@+id/nav_categorias_cadastradas"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Categorias Cadastradas" />
+        <item
+            android:id="@+id/nav_categorias_todas"
+            android:icon="@drawable/historico"
+            android:title="Todas as Categorias" />
+
+    </group>
+
+    <item android:title="Conta">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

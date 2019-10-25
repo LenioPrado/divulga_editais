@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mais Poços</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_cadastrados">Editais Cadastrados</string>
+    <string name="nav_todos">Todos os Editais</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Editais Cadastrados</item>
+        <item>Todos os Editais</item>
+        <item>Categorias Cadastradas</item>
+        <item>Todas as Categorias</item>
+    </string-array>
+
+    <string name="logout">Logout</string>
+
+    <string name="todo">TODO</string>
+    <string name="serverAddress">200.131.172.154</string>
+</resources>
